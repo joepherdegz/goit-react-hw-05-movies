@@ -44,7 +44,7 @@ const MovieDetailsPage = () => {
                 />
                 <div className={css.movieDetailsWrap}>
                     <h1>{movieDetails.title}</h1>
-                    <h4>User score: {Math.round(movieDetails.vote_average * 10)}%</h4>
+                    <h2>User score: {Math.round(movieDetails.vote_average * 10)}%</h2>
                     <h2>Overview</h2>
                     <p>{movieDetails.overview}</p>
                     <h2>Genres</h2>

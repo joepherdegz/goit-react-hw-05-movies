@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import css from './CastListItem.module.css';
 
 export const CastListItem = ({ profilePath, originalName, name }) => {
     return (
         <li>
-            <img
-                width="250"
-                height="250"
+            <img className={css.castImageWrap}
+                width="280"
+                height="300"
                 src={
                     profilePath
                         ? `https://image.tmdb.org/t/p/w300${profilePath}`
@@ -13,7 +14,7 @@ export const CastListItem = ({ profilePath, originalName, name }) => {
                 }
                 alt={originalName}
             />
-            <p>{name}</p>
+            <p className={css.nameWrap}>{name}</p>
         </li>
     );
 };

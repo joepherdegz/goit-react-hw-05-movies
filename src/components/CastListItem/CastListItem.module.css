@@ -1,0 +1,9 @@
+.castImageWrap {
+    /* box-shadow: 0 2px 14px rgba(112, 73, 204, 0.1); */
+    border-radius: 4px;
+}
+.nameWrap {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}

@@ -57,13 +57,15 @@ const MovieDetailsPage = () => {
             </div>
             
             <hr />
+            <div className={css.addInfoWrap}>
             <h3>Additional Information</h3>
             <Link to="cast" className={css.link}>
                 <button className={css.infoButton}>Cast</button>
             </Link>
             <Link to="reviews" className={css.link}>
                 <button className={css.infoButton}>Reviews</button>
-            </Link>
+                </Link>
+                </div>
             <hr />
             <Suspense fallback={<div>Loading...</div>}>
                 <Outlet />

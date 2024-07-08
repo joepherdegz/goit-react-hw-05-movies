@@ -7,6 +7,7 @@ export const MovieListItem = ({ id, title }) => {
     const location = useLocation();
 
     return (
+        <div className={css.movieListContainer}>
         <li className={css.movieItem} key={id}>
             <Link
                 to={`/movies/${id}`}
@@ -15,7 +16,8 @@ export const MovieListItem = ({ id, title }) => {
             >
                 <h3>{title}</h3>
             </Link>
-        </li>
+            </li>
+        </div>
     );
 };
 

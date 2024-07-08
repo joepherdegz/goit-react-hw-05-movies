@@ -1,0 +1,21 @@
+.titleWrap {
+    font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+}
+
+.listWrap {
+    margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+}
+.noticeWrap {
+    font-size: 20px;
+    margin: 30px 40px;
+    color: rgb(102, 21, 177);
+}

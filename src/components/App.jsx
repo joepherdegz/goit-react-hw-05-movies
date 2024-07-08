@@ -16,13 +16,13 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="movies" element={<MoviesPage />}>
-            <Route path=":movieId" element={<MovieDetailsPage />}>
-              <Route path="cast" element={<CastList />} />
-              <Route path="reviews" element={<ReviewsList />} />
+            <Route path="movies" element={<MoviesPage />}>
+              <Route path=":movieId" element={<MovieDetailsPage />}>
+                <Route path="cast" element={<CastList />} />
+                <Route path="reviews" element={<ReviewsList />} />
+              </Route>
             </Route>
           </Route>
-        </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

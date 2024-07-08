@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchMovieCast } from "api/api";
 import { CastListItem } from 'components/CastListItem/CastListItem';
+import css from './Castlist.module.css'
 
 const CastList = () => {
     const { movieId } = useParams();
@@ -21,14 +22,14 @@ const CastList = () => {
     return (
         <>
             {cast.length !== 0 ? (
-                <div>
-                    <h2>Movie Cast</h2>
-                    <ul>
+                <div >
+                    <div className={css.castContainer}><h2>Movie Cast</h2> </div>
+                    <ul className={css.movieCastWrap}>
                         {cast.map(({ id, profile_path, original_name, name }) => (
                             <CastListItem
                                 key={id}
                                 id={id}
-                                profile_path={profile_path}
+                                profilePath={profile_path}
                                 original_name={original_name}
                                 name={name}
                             />
@@ -36,7 +37,7 @@ const CastList = () => {
                     </ul>
                 </div>
             ) : (
-                <div>We don't have any cast for this movie!</div>
+                <div className={css.castNoticeWrap}>We don't have any cast for this movie!</div>
             )}
         </>
     );

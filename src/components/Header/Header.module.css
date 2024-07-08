@@ -1,7 +1,7 @@
 /* Header.module.css */
 .header {
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 30px;
 }
 
 .nav {
@@ -12,10 +12,11 @@
 .link {
     text-decoration: none;
     color: black;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .linkActive {
     color: orange;
-    font-weight: 700;
+    font-weight: 800;
+    text-decoration: none;
 }

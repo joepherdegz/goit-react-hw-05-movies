@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchMovieCast } from "api/api";
 import { CastListItem } from 'components/CastListItem/CastListItem';
 
-const CastLIst = () => {
+const CastList = () => {
     const { movieId } = useParams();
     const [cast, setCast] = useState([]);
 

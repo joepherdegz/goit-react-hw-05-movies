@@ -6,18 +6,18 @@ export const Header = () => {
     return (
         <header className={css.header}>
             <nav className={css.nav}>
-                <Navlink
+                <NavLink
                     to="/"
                     className={({ isActive }) => (isActive ? css.linkActive : css.link)}
                     end>
                     Home
-                </Navlink>
-                <Navlink
+                </NavLink>
+                <NavLink
                     to="/movies"
-                    className={({ isActive }) => (isActive ? css.linkActive : cs.link)}
+                    className={({ isActive }) => (isActive ? css.linkActive : css.link)}
                 >
                     Movies
-                </Navlink>
+                </NavLink>
             </nav>
         </header>
     );

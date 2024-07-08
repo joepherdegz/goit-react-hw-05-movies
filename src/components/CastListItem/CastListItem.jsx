@@ -5,7 +5,7 @@ export const CastListItem = ({ profilePath, originalName, name }) => {
         <li>
             <img
                 width="200"
-                height="300"
+                height="200"
                 src={
                     profilePath
                         ? `https://image.tmdb.org/t/p/w300${profilePath}`
